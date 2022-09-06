@@ -1,0 +1,235 @@
+/*General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(0, 0, 0);
+}
+
+h1 {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 53, 199);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 53, 199);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 53, 199);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h5 {
+    color: rgb(0, 53, 199);
+    margin-top: 10px;
+}
+
+div {
+    color: rgb(0, 53, 199);
+    margin-top: 5px;
+}
+
+p {
+    color: rgb(0, 53, 199);
+}
+
+header {
+    
+}
+
+header nav {
+    
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px;
+    border: ridge rgb(0, 53, 199);
+}
+
+footer {
+    
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 5px;
+    color: rgb(0, 53, 199);
+}
+
+
+/*Index Style*/
+
+.sectionIndex {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.articleIndex {
+    
+}
+
+.imgIndex {
+    width: 1000px;
+    height: 700px;
+}
+
+
+/*Actividades Style*/
+
+.sec1Act {
+    text-align: center;
+    margin-bottom: 50px;    
+}
+
+.img1Act {
+    width: 1000px;
+    height: 700px;
+    margin-top: 50px;
+}
+
+.img2Act {
+    width: 1000px;
+    height: 700px;
+    margin-top: 50px;
+}
+
+.img3Act {
+    width: 1000px;
+    height: 700px;
+    margin-top: 50px;
+}
+
+.sec2Act {
+    text-align: center;
+}
+
+.tableAct {
+    border: solid 2px whitesmoke;
+}
+
+th {
+    color: rgb(0, 53, 199);
+    border: solid 2px whitesmoke;
+}
+
+td {
+    color: rgb(0, 53, 199);
+    border: solid 2px whitesmoke;
+}
+
+
+/*Sponsors Style*/
+
+.secSpo {
+    text-align: center;
+    margin-top: 50px;
+}
+.imgSpo1 {
+    width: 1000px;
+    height: 700px;
+    margin-bottom: 50px;
+}
+.imgSpo2 {
+    width: 1000px;
+    height: 700px;
+    margin-bottom: 50px;
+}
+.imgSpo3 {
+    width: 1000px;
+    height: 700px;
+    margin-bottom: 50px;
+}
+
+/*Nosotros Style*/
+
+.sec1Nos {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imgNos {
+    width: 1400px;
+    height: 1000px;
+}
+
+.sec2Nos {
+    margin-bottom: 50px;
+}
+
+legend {
+    color: aliceblue;
+}
+
+
+/*Contacto Style*/
+
+.formCont {
+    background-image: url(../multimedia/Happy\ People.jpg);
+    background-size: cover;
+    width: 1514px;
+    height: 1300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.label1 {
+    margin-right: 9px;
+}
+
+.label2 {
+    margin-right: 27px;
+}
+
+.label3 {
+    margin-right: 5px;
+}
+
+input {
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
