@@ -14,49 +14,32 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
-h1 {
+h1, h3 {
     font-style: italic;
     font-weight: bold;
-    text-align: center;
-    color: rgb(0, 53, 199);
+    color: rgb(255, 255, 255);
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-h3 {
-    font-style: italic;
-    font-weight: bold;
     text-align: center;
-    color: rgb(0, 53, 199);
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
-h4 {
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-    color: rgb(0, 53, 199);
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-h5 {
-    color: rgb(0, 53, 199);
+h4, h5 {
+    color: rgb(255, 255, 255);
     margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 div {
-    color: rgb(0, 53, 199);
+    color: rgb(255, 255, 255);
     margin-top: 5px;
 }
 
 p {
-    color: rgb(0, 53, 199);
+    color: rgb(255, 255, 255);
 }
 
 header {
-    
+    grid-area: header;
 }
 
 header nav {
@@ -65,52 +48,97 @@ header nav {
 
 header nav ul {
     list-style-type: none;
-    text-align: right;
+    display: flex;
+    justify-content: end;
 }
 
 header nav ul li {
-    display: inline-block;
     padding: 10px;
-    border: ridge rgb(0, 53, 199);
+    border: ridge rgb(30, 27, 196);
+}
+
+main {
+    grid-area: main;
 }
 
 footer {
-    
+    grid-area: footer;
 }
 
 footer ul {
     list-style-type: none;
-    text-align: right;
+    display: flex;
+    justify-content: end;
 }
 
 footer ul li {
-    display: inline-block;
     padding: 5px;
-    color: rgb(0, 53, 199);
+    color: rgb(255, 255, 255);
+    border: ridge rgb(30, 27, 196);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 
 /*Index Style*/
 
-.sectionIndex {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.articleIndex {
-    
+.bodyindex {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 7fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
 }
 
-.imgIndex {
-    width: 1000px;
-    height: 700px;
+.mainindex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgindex {
+    width: 421px;
+    height: 270px;
+}
+
+@media screen and (max-width: 768px) {
+    .bodyindex {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 4fr 0.5fr;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+    }
+    .mainindex {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bodyindex {
+        display: flex;
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
 /*Actividades Style*/
 
+.odyActividades {
+
+}
+
 .sec1Act {
-    text-align: center;
     margin-bottom: 50px;    
 }
 
@@ -133,7 +161,7 @@ footer ul li {
 }
 
 .sec2Act {
-    text-align: center;
+    
 }
 
 .tableAct {
@@ -141,42 +169,79 @@ footer ul li {
 }
 
 th {
-    color: rgb(0, 53, 199);
-    border: solid 2px whitesmoke;
+    color: rgb(255, 255, 255);
+    border: solid 2px rgb(23, 40, 197);
 }
 
 td {
-    color: rgb(0, 53, 199);
-    border: solid 2px whitesmoke;
+    color: rgb(255, 255, 255);
+    border: solid 2px rgb(23, 40, 197);
 }
 
 
 /*Sponsors Style*/
 
-.secSpo {
-    text-align: center;
-    margin-top: 50px;
+.bodySponsors {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 7fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
 }
+
+.mainSponsors {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .imgSpo1 {
-    width: 1000px;
-    height: 700px;
+    width: 375px;
+    height: 250px;
     margin-bottom: 50px;
 }
 .imgSpo2 {
-    width: 1000px;
-    height: 700px;
+    width: 375px;
+    height: 250px;
     margin-bottom: 50px;
 }
 .imgSpo3 {
-    width: 1000px;
-    height: 700px;
+    width: 375px;
+    height: 250px;
     margin-bottom: 50px;
 }
 
+@media screen and (max-width: 768px) {
+    .bodySponsors {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 4fr 0.5fr;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+    }
+    .mainSponsors {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bodySponsors {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 /*Nosotros Style*/
 
+.bodyNosotros {
+
+}
+
 .sec1Nos {
-    text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -196,6 +261,10 @@ legend {
 
 
 /*Contacto Style*/
+
+.bodyContacto {
+
+}
 
 .formCont {
     background-image: url(../multimedia/Happy\ People.jpg);
