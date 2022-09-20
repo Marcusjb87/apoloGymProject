@@ -10,46 +10,61 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="bodyNosotros">
     <header>
         <h3 class="animate__animated animate__rubberBand">NOSOTROS</h3>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-				<li><a href="Actividades.html">Actividades</a></li>
-				<li><a href="Sponsors.html">Sponsors</a></li>
-				<li>Nosotros</li>
-				<li><a href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./multimedia/Dumbbell.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Actividades.html">Actividades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Sponsors.html">Sponsors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
     <section class="sec1Nos">
         <article id="Historia">
-            <img src="../multimedia/Male Strenght.jpg" alt="Inauguración del Establecimiento" class="imgNos">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <img src="../multimedia/Male Strenght.jpg" alt="Inauguración del Establecimiento" class="imgNos img-fluid">
+            <p>Nuestra historia comenzó en el año 1987, cuando un grupo de 3 amigos decidió cumplir su sueño y fundar Apolo Gym (el cual mantuvo su nombre hasta el día de hoy).</p>
+            <p>No se llevó a cabo una gran inversión, ya que que comenzó como un gimnasio de barrio (con pocas máquinas y espacio reducido de entrenamiento).</p>
+            <p>Luego de más de 30 años (y con innumerables refacciones), hoy podemos decir que nuestro gimnasio es uno de los más reconocidos de la Ciudad de Córdoba y, actualmente, cuenta con más de 50 máquinas para todo tipo de ejercitación y con más de 200 socios activos, a los cuales les agradecemos día a día el apoyo incondicional que le brindan a nuestro proyecto de toda la vida.</p>
         </article>
     </section>
     <section class="sec2Nos">
         <form action="">
         <fieldset>
-            <legend>Breve Encuesta</legend>
+            <legend><u>Breve Encuesta</u></legend>
             <h5>¿Qué actividad te gusta más?</h5>
             <select name="actividades" id="">
             <option value="Musc">Musculación</option>
             <option value="Zum">Zumba</option>
             <option value="Rit">Ritmos</option>
             <option value="Spi">Spinning</option>
-            </select>
-            <h5>¿Qué horario te queda más cómodo?</h5>
+            </select>     
+            <h5>¿Qué horario te queda más cómodo?</h5> 
             <div>07 a 12</div>
             <input type="radio" name="horario" value="7a12">
             <div>12 a 17</div>
@@ -63,11 +78,18 @@
     </section>
     </main>
     <footer>
-        <ul>
-            <li><a href="http://www.facebook.com">Facebook</a></li>
-            <li>Instagram</li>
-            <li>WhatsApp</li>
-        </ul>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://www.facebook.com">Facebook</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Instagram</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">WhatsApp</a>
+            </li>
+          </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@ html {
     font-size: 62,5%;
 }
 
-body {
+body, nav {
     font-family: 'Playfair Display', serif;
     background-image: linear-gradient(to right, darkblue, black);
 }
@@ -36,9 +36,9 @@ div {
 
 p {
     color: rgb(255, 255, 255);
-}
+} 
 
-header {
+/* header {
     grid-area: header;
 }
 
@@ -86,11 +86,11 @@ a {
 a:hover {
     color: blue;
 } 
-
-
+*/
+/*
 /*Index Style*/
 
-.bodyindex {
+/* .bodyindex {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 2fr 7fr 1fr;
@@ -135,11 +135,11 @@ a:hover {
         align-items: center;
     }
 }
-
+ */
 
 /*Actividades Style*/
 
-.bodyActividades {
+/* .bodyActividades {
 
 }
 
@@ -167,7 +167,7 @@ a:hover {
 
 .sec2Act {
     
-}
+} */
 
 .tableAct {
     border: solid 2px whitesmoke;
@@ -191,7 +191,7 @@ td {
 
 /*Sponsors Style*/
 
-.bodySponsors {
+/* .bodySponsors {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 2fr 7fr 1fr;
@@ -243,11 +243,11 @@ td {
         flex-direction: column;
     }
 }
-
+ */
 
 /*Nosotros Style*/
 
-.bodyNosotros {
+/* .bodyNosotros {
 
 }
 
@@ -259,10 +259,12 @@ td {
 .imgNos {
     width: 1400px;
     height: 1000px;
-}
+} */
 
 .sec2Nos {
+    margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 legend {
@@ -277,10 +279,6 @@ legend {
 }
 
 .formCont {
-    background-image: url(../multimedia/Happy\ People.jpg);
-    background-size: cover;
-    width: 1514px;
-    height: 1300px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -291,14 +289,17 @@ label {
 
 .label1 {
     margin-right: 9px;
+    color: aliceblue;
 }
 
 .label2 {
     margin-right: 27px;
+    color: aliceblue;
 }
 
 .label3 {
     margin-right: 5px;
+    color: aliceblue;
 }
 
 input {
