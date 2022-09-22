@@ -12,6 +12,13 @@ html {
 body {
     font-family: 'Playfair Display', serif;
     background-image: linear-gradient(to right, darkblue, black);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 7fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
 }
 
 h1, h3 {
@@ -27,23 +34,25 @@ h4, h5 {
     color: rgb(255, 255, 255);
     margin-top: 10px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 div {
     color: rgb(255, 255, 255);
     margin-top: 5px;
+    
 }
 
 p {
     color: rgb(255, 255, 255);
+    text-align: center;
+    width: 350px;
 }
 
 header {
     grid-area: header;
-}
-
-header nav {
-    
+    margin-bottom: 25px;
+    margin-right: 7px;
 }
 
 header nav ul {
@@ -55,14 +64,19 @@ header nav ul {
 header nav ul li {
     padding: 10px;
     border: ridge rgb(30, 27, 196);
+    color: aliceblue;
 }
 
 main {
     grid-area: main;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 footer {
     grid-area: footer;
+    margin-top: 25px;
+    margin-right: 7px;
 }
 
 footer ul {
@@ -85,34 +99,10 @@ a {
 
 a:hover {
     color: blue;
-} 
-
-
-/*Index Style*/
-
-.bodyindex {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 2fr 7fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer";
-}
-
-.mainindex {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.imgindex {
-    width: 421px;
-    height: 270px;
 }
 
 @media screen and (max-width: 768px) {
-    .bodyindex {
+    body {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 4fr 0.5fr;
         grid-template-areas: 
@@ -120,62 +110,41 @@ a:hover {
         "main main"
         "footer footer";
     }
-    .mainindex {
+    main {
         flex-wrap: wrap;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .bodyindex {
+    body {
         display: flex;
-        flex-direction: column;
-    }
-    header nav ul {
         flex-direction: column;
         align-items: center;
     }
+    header nav ul {
+        flex-direction: column;
+    }
 }
+
+.image {
+    width: 350px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+table {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+/*Index Style*/
 
 
 /*Actividades Style*/
 
-.bodyActividades {
-
-}
-
-.sec1Act {
-    margin-bottom: 50px;    
-}
-
-.img1Act {
-    width: 1000px;
-    height: 700px;
-    margin-top: 50px;
-}
-
-.img2Act {
-    width: 1000px;
-    height: 700px;
-    margin-top: 50px;
-}
-
-.img3Act {
-    width: 1000px;
-    height: 700px;
-    margin-top: 50px;
-}
-
-.sec2Act {
-    
-}
-
-.tableAct {
-    border: solid 2px whitesmoke;
-    transition: all infinite;
-}
-
 .tableAct:hover {
-    transform: scale(1.5) translateX(55px);
+    transform: scale(1.5);
 }
 
 th {
@@ -191,78 +160,14 @@ td {
 
 /*Sponsors Style*/
 
-.bodySponsors {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 2fr 7fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer";
-}
-
-.mainSponsors {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.imgSpo1 {
-    width: 375px;
-    height: 250px;
-    margin-bottom: 50px;
-}
-.imgSpo2 {
-    width: 375px;
-    height: 250px;
-    margin-bottom: 50px;
-}
-.imgSpo3 {
-    width: 375px;
-    height: 250px;
-    margin-bottom: 50px;
-}
-
-@media screen and (max-width: 768px) {
-    .bodySponsors {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 4fr 0.5fr;
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "footer footer";
-    }
-    .mainSponsors {
-        flex-wrap: wrap;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .bodySponsors {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 
 /*Nosotros Style*/
 
-.bodyNosotros {
-
-}
-
-.sec1Nos {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.imgNos {
-    width: 1400px;
-    height: 1000px;
-}
-
 .sec2Nos {
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 350px;
 }
 
 legend {
@@ -272,21 +177,17 @@ legend {
 
 /*Contacto Style*/
 
-.bodyContacto {
-
-}
-
-.formCont {
-    background-image: url(../multimedia/Happy\ People.jpg);
-    background-size: cover;
-    width: 1514px;
-    height: 1300px;
+.formCont { 
+    width: 350px;
+    height: 250px;
     margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 label {
     font-weight: bold;
+    color: aliceblue;
 }
 
 .label1 {
