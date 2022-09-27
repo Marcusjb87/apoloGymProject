@@ -1,0 +1,119 @@
+/* Imports */
+
+@import "variables";
+@import "actividades";
+@import "nosotros";
+@import "contacto";
+@import "mqueries";
+
+
+/* General Styles */ 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: $colorPrincipal;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 7fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+h1, h3 {
+    font-style: italic;
+    font-weight: bold;
+    color: $colorTexto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h4, h5 {
+    color: $colorTexto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+div {
+    color: $colorTexto;
+    margin-top: 5px;
+    
+}
+
+p {
+    color: $colorTexto;
+    text-align: center;
+    width: 350px;
+}
+
+header {
+    grid-area: header;
+    margin-bottom: 25px;
+    margin-right: 7px;
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: end;
+            li {
+                padding: 10px;
+                border: ridge rgb(30, 27, 196);
+                color: aliceblue;
+            }
+        }
+    }
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    grid-area: footer;
+    margin-top: 25px;
+    margin-right: 7px;
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: end;
+        li {
+            padding: 5px;
+            color: $colorTexto;
+            border: ridge rgb(30, 27, 196);
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $colorTexto;
+    transition: all infinite;
+    &:hover {
+        color: blue;
+    }
+}
+
+.image {
+    width: 350px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+table {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
