@@ -10,7 +10,7 @@ td {
   color: white;
   border: solid 2px #1728c5; }
 
-.sec2Nos {
+.sec2Nos, .formCont {
   margin-top: 50px;
   margin-bottom: 25px;
   text-align: center;
@@ -20,11 +20,8 @@ legend {
   color: aliceblue; }
 
 .formCont {
-  width: 350px;
   height: 250px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-align: center; }
+  margin-bottom: 50px; }
 
 label {
   font-weight: bold;
@@ -53,7 +50,9 @@ textarea {
   body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 4fr 0.5fr;
-    grid-template-areas: "header header" "main main" "footer footer"; }
+    grid-template-areas: "header header"
+ "main main"
+ "footer footer"; }
   main {
     flex-wrap: wrap; } }
 
@@ -79,7 +78,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 2fr 7fr 1fr;
-  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer"; }
 
 h1, h3 {
   font-style: italic;

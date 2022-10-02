@@ -6,6 +6,11 @@
 @import "contacto";
 @import "mqueries";
 
+@mixin up-down {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
 
 /* General Styles */ 
 
@@ -108,12 +113,11 @@ a {
 }
 
 .image {
-    width: 350px;
-    height: 250px;
-    margin-top: 20px;
+    width: map-get($Imagenes , ancho);
+    height: map-get($Imagenes , alto);
+    margin-top: map-get($Imagenes , margenup);
 }
 
 table {
-    margin-top: 25px;
-    margin-bottom: 10px;
+    @include up-down;
 }

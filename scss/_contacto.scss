@@ -1,9 +1,7 @@
 .formCont { 
-    width: 350px;
+    @extend .sec2Nos;
     height: 250px;
-    margin-top: 50px;
     margin-bottom: 50px;
-    text-align: center;
 }
 
 label {
