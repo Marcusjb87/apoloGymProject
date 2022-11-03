@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Te contamos brevemente nuestra trayectoria y cómo nos convertimos en uno de los mejores Gimnasios de Córdoba">
+	<meta name="keywords" content="CORDOBA, GYM, GIMNASIO, APOLO GYM">
     <title>Nosotros</title>
     <link rel="shortcut icon" href="../multimedia/Dumbbell.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +16,8 @@
 </head>
 <body>
     <header>
-        <h3 class="animate__animated animate__rubberBand">NOSOTROS</h3>
+        <img src="../multimedia/Dumbbell.png" alt="logo" class="logo">
+        <h1 class="animate__animated animate__rubberBand">NOSOTROS</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -30,9 +33,9 @@
         <img src="../multimedia/Male Strenght.jpg" alt="Inauguración del Establecimiento" class="image">
       </div>
       <div>
-        <p>Nuestra historia comenzó en el año <strong>1987</strong>, cuando un grupo de 3 amigos decidió cumplir su sueño y fundar <strong>Apolo Gym</strong> (el cual mantuvo su nombre hasta el día de hoy).</p>
-        <p>No se llevó a cabo una gran inversión, ya que que <strong>comenzó como un gimnasio de barrio</strong> (con pocas máquinas y espacio reducido de entrenamiento).</p>
-        <p>Luego de más de 30 años (y con innumerables refacciones), <strong>hoy</strong> podemos decir que nuestro gimnasio <strong>es uno de los más reconocidos</strong> de la Ciudad de Córdoba y, actualmente, <strong>cuenta</strong> con <strong>más de 50 máquinas</strong> para todo tipo de ejercitación y con <strong>más de 200 socios</strong> activos, a los cuales les agradecemos día a día el apoyo incondicional que le brindan a nuestro proyecto de toda la vida.</p>
+        <p>Nuestra historia comenzó en el año <span class="spanNosotros">1987</span>, cuando un grupo de 3 amigos decidió cumplir su sueño y fundar <span class="spanNosotros">Apolo Gym</span> (el cual <span class="spanNosotros">mantuvo su nombre</span> hasta el día de hoy).</p>
+        <p>No se llevó a cabo una gran inversión, ya que que <span class="spanNosotros">comenzó como un gimnasio de barrio</span> (con pocas máquinas y espacio reducido de entrenamiento).</p>
+        <p>Luego de más de 30 años (y con innumerables refacciones), <span class="spanNosotros">hoy</span> podemos decir que nuestro gimnasio <span class="spanNosotros">es uno de los más reconocidos</span> de la Ciudad de Córdoba y, actualmente, <span class="spanNosotros">cuenta</span> con <span class="spanNosotros">más de 50 máquinas</span> para todo tipo de ejercitación y con <span class="spanNosotros">más de 200 socios</span> activos, a los cuales les agradecemos día a día el apoyo incondicional que le brindan a nuestro proyecto de toda la vida.</p>
       </div>    
       <section class="sec2Nos">
         <form action="">
@@ -46,13 +49,23 @@
             <option value="Spi">Spinning</option>
             </select>
             <h5>¿Qué horario te queda más cómodo?</h5>
-            <div>07 a 12</div>
-            <input type="radio" name="horario" value="7a12">
-            <div>12 a 17</div>
-            <input type="radio" name="horario" value="12a17">
-            <div>17 a 22</div>
-            <input type="radio" name="horario" value="17a22">
+            <div>
+                <p>7 a 12</p>
+            </div>
+            <label for="horario1"></label>
+            <input type="radio" name="horario1" value="7a12">
+            <div>
+                <p>12 a 17</p>
+            </div>
+            <label for="horario2"></label>
+            <input type="radio" name="horario2" value="12a17">
+            <div>
+                <p>17 a 22</p>
+            </div>
+            <label for="horario3"></label>
+            <input type="radio" name="horario3" value="17a22">
             <h5>Acepto compartir esta información</h5>
+            <label for="términos"></label>
             <input type="checkbox" name="términos" value="yes">
         </fieldset>
         </form>

@@ -1,7 +1,9 @@
 /* Imports */
 
 @import "variables";
+@import "index";
 @import "actividades";
+@import "sponsors";
 @import "nosotros";
 @import "contacto";
 @import "mqueries";
@@ -28,7 +30,7 @@ body {
     background-image: $colorPrincipal;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 7fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas: 
     "header header header"
     "main main main"
@@ -64,6 +66,8 @@ p {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     grid-area: header;
     margin-bottom: 25px;
     margin-right: 7px;
@@ -120,4 +124,10 @@ a {
 
 table {
     @include up-down;
+}
+
+.logo {
+    text-align: left;
+    width: 70px;
+    height: 50px;
 }
